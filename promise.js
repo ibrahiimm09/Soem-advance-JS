@@ -35,6 +35,7 @@ function createPost(post){
 
     })
 }
+
 // createPost({title : 'Post-3', body : 'This is a body of post-3'})
 // .then(getPosts).catch(err =>{
 //     console.log(err);
@@ -73,6 +74,7 @@ const Promise3 = new Promise((resolve , reject)=>{
 // If promise gets resolve then parsed the data into JSON.
 // 'res' stores the value return by .then on fulfilment of promise.
 const Promise4 = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json());
+
 // Here 'values' stores the va;ues returned y .then on fulfilment of promise.
 Promise.all([Promise1 , Promise2 , Promise3, Promise4]).then(values => console.log(values))
 
